@@ -17,7 +17,7 @@ jobs:
 
       - name: Build front
         run: |
-          npm install
+          npm install -g npm@9.6.2
           npm run build
 
       - name: Configure AWS credentials
