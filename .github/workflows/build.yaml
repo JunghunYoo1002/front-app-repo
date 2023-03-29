@@ -11,6 +11,11 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
+      
+      - name: Use Node.js 16.19.1
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.19.1'
 
       - name: Check Node v
         run: node -v
